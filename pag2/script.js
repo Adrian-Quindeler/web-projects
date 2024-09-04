@@ -5,12 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     tabLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-
-            // Remove active class from all tabs and content
             tabLinks.forEach(link => link.classList.remove('active'));
             tabContents.forEach(content => content.classList.remove('active'));
 
-            // Add active class to the clicked tab and corresponding content
             this.classList.add('active');
             const tabId = this.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('active');
