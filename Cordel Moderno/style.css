@@ -1,11 +1,21 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Caveat', cursive;
+}
 
 *{
     margin: 0;
     padding: 0;
 }
+
 html, body{
     min-height: 100%;
+    font-family: var(--font1);
     background-color: #A9A9A9;
 }
 
@@ -17,7 +27,9 @@ header{
 
 header h1{
     padding-top: 50px;
+    font-family: var(--font2);
     font-variant: small-caps;
+    font-size: 6vw;
 }
 
 header p{
@@ -46,19 +58,37 @@ section.normal{
 
 section.imagem{
     color: #FFF;
+    background-size: cover;
     background-color: #222222;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 15px #000;
 }
 
 section.imagem pre{
     color: #FFF;
-    width: 400px;
-    background-color: #00000088;
+    display: inline-block;
+    padding: 5px 10px 5px 5px;
+    text-shadow: 1px 1px 0 #000;
+    background-color: #00000080;
+}
+
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 
 pre{
-    line-height: 2em;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 1.5em;
     margin-left: 30px;
     white-space: pre-line;
+    font-family: var(--font3);
 }
 
 footer{
