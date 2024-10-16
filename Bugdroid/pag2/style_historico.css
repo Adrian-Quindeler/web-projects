@@ -333,3 +333,68 @@ article ul{
         position: relative;
     }
 }
+
+@media (max-width: 450px) {
+    main img { width: 350px; }
+
+    div{
+        height: 1800px;
+    }
+
+    div.esquerda img.android{
+        left: 0;
+        top: 1111px;
+        position: relative;
+    }
+    
+    div.esquerda img.doce{
+        top: 1100px;
+        left: 10px;
+        width: 350px;
+        position: relative;
+    }
+    
+    div.esquerda article{
+        left: 20px;
+        top: -550px;
+        width: 85vw;
+        position: relative;
+    }
+    
+    div.direita img.android{
+        left: 0;
+        top: 1111px;
+        position: relative;
+    }
+    
+    div.direita img.doce{
+        top: 1100px;
+        left: 10px;
+        width: 350px;
+        position: relative;
+    }
+    
+    div.direita article{
+        left: 20px;
+        top: -550px;
+        width: 85vw;
+        position: relative;
+    }
+}
+
+@media (max-width: 380px) {
+    main img { width: 300px; }
+
+    div.esquerda img.android{top: 1200px;}
+    div.direita img.android{top: 1200px;}
+    div.esquerda img.doce{
+        top: 1200px;
+        width: 300px;
+    }
+    div.direita img.doce{
+        top: 1200px;
+        width: 300px;
+    }
+    div.esquerda article{top: -470px;}
+    div.direita article{top: -470px;}
+}
