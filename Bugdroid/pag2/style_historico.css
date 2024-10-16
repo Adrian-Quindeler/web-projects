@@ -34,8 +34,8 @@ body{
 
 header{
     color: #FFF;
-    text-align: center;
     padding-top: 10px;
+    text-align: center;
     text-shadow: 2px 2px 0 #00000080;
     background-image: linear-gradient(var(--cor3), var(--cor5));
 }
@@ -74,71 +74,106 @@ nav.header a:hover{
     background-color: var(--cor2);
 }
 
-nav ul {
+main{
+    width: 98vw;
     margin: auto;
+    padding: 10px;
+    max-width: 1508px;
+    position: relative;
+}
+
+main nav{
     display: flex;
     overflow-x: auto;
-    list-style: none;
     white-space: nowrap;
-    justify-content: space-around;
 }
 
-nav ul li {
-    flex: none;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    margin: 0 10px;
-    font-size: 14px;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px 5px 0 0;
-    background-color: var(--cor3);
-}
-
-main {
-    height: 100vh;
-    padding: 20px;  
-    line-height: 1.5em;
-    background-color: white;
-}
-
-main article{   
-    top: 220px;
-    left: 50%;
-    width: 45vw;
+main nav a{
     padding: 10px;
-    position: absolute;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: var(--cor5);
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--cor1);
 }
 
-img.doce{
-    top: 200px;
-    left: 40px;
-    width: 40vw;
-    position: absolute;
+main nav a:hover{
+    color: var(--cor1);
+    transition-duration: 0.5s;
+    background-color: var(--cor5);
 }
 
-img.android{
-    top: 60vw;
-    left: 40px;
-    width: 40vw;
-    position: absolute;
+main nav a:active{
+    color: var(--cor5);
+    background-color: var(--cor1);
 }
 
-article h1, article h2{
+main div{
+    background-color: #FFF;
+}
+
+h1{
+    font-size: 48px;
     text-align: center;
+    font-family: var(--fonte-android);
+}
+
+main img { width: 520px; }
+
+div.esquerda img.android{
+    left: 10px;
+    top: -210px;
+    position: relative;
+}
+
+div.esquerda img.doce{
+    top: 300px;
+    left: -500px;
+    position: relative;
+}
+
+div.esquerda article{
+    left: 48%;
+    top: -500px;
+    width: 48vw;
+    max-width: 750px;
+    position: relative;
+}
+
+div.direita img.android{
+    left: 55%;
+    top: -210px;
+    position: relative;
+}
+
+div.direita img.doce{
+    left: 22%;
+    top: 300px;
+    position: relative;
+}
+
+div.direita article{
+    right: -20px;
+    top: -500px;
+    width: 48vw;
+    max-width: 750px;
+    position: relative;
+}
+
+article h2{
+    text-align: center;
+    margin: 30px 0 10px 0;
 }
 
 article p{
-    padding: 20px 0;
+    line-height: 1.4em;
 }
 
-
-article h2, article li{
-    margin: 10px;
+article ul{
+    margin-left: 17px;
 }
 
 .tab-content {
@@ -149,31 +184,152 @@ article h2, article li{
     display: block;
 }
 
-@media (min-width: 1500px) {
-    main{
-        width: 1400px;
-        margin: auto;
+@media (max-width: 1400px) {
+    div.direita img.doce{
+        left: 15%;
+        top: 300px;
+        position: relative;
     }
+}
 
-    article{   
-        top: 220px;
-        left: 500px;
-        width: 500px;
-        padding: 10px;
+@media (max-width: 1200px) {
+    main img { width: 400px; }
+
+    div.esquerda img.android{top: -150px;}
+    
+    div.esquerda img.doce{left: -400px;}
+    
+    div.esquerda article{top: -380px;}
+    
+    div.direita img.android{top: -150px;}
+    
+    div.direita img.doce{left: 18%;}
+    
+    div.direita article{top: -380px;}
+}
+
+@media (max-width: 920px) {
+    main img { width: 350px; }
+
+    div.esquerda img.android{
+        left: 0;
+        top: 620px;
         position: relative;
     }
     
-    img.doce{
-        top: 200px;
-        left: 40px;
-        width: 500px;
-        position: absolute;
+    div.esquerda img.doce{
+        top: 650px;
+        left: 0;
+        position: relative;
     }
     
-    img.android{
-        top: 800px;
-        left: 40px;
-        width: 500px;
-        position: absolute;
+    div.esquerda article{
+        left: 20px;
+        top: -350px;
+        width: 90vw;
+        position: relative;
+    }
+    
+    div.direita img.android{
+        left: 10px;
+        top: 600px;
+        position: relative;
+    }
+    
+    div.direita img.doce{
+        top: 650px;
+        left: 20px;
+        position: relative;
+    }
+    
+    div.direita article{
+        left: 20px;
+        top: -340px;
+        width: 90vw;
+        position: relative;
+    }
+}
+
+@media (max-width: 745px) {
+    main img { width: 200px; }
+    div{
+        height: 1000px;
+    }
+
+    div.esquerda img.android{
+        top: 700px;
+        left: 50px;
+        position: relative;
+    }
+
+    div.esquerda img.doce{
+        top: 700px;
+        left: 200px;
+        width: 130px;
+        position: relative;
+    }
+    div.esquerda article{top: -130px}
+
+    div.direita img.android{
+        top: 780px;
+        left: 50px;
+        position: relative;
+    }
+
+    div.direita img.doce{
+        top: 780px;
+        left: 200px;
+        width: 130px;
+        position: relative;
+    }
+    div.direita article{top: -130px}
+    
+}
+
+@media (max-width: 600px) {
+    main img { width: 400px; }
+
+    div{
+        height: 1600px;
+    }
+
+    div.esquerda img.android{
+        left: 50px;
+        top: 910px;
+        position: relative;
+    }
+    
+    div.esquerda img.doce{
+        top: 880px;
+        left: 50px;
+        width: 400px;
+        position: relative;
+    }
+    
+    div.esquerda article{
+        left: 20px;
+        top: -630px;
+        width: 85vw;
+        position: relative;
+    }
+    
+    div.direita img.android{
+        left: 50px;
+        top: 910px;
+        position: relative;
+    }
+    
+    div.direita img.doce{
+        top: 880px;
+        left: 50px;
+        width: 400px;
+        position: relative;
+    }
+    
+    div.direita article{
+        left: 20px;
+        top: -630px;
+        width: 85vw;
+        position: relative;
     }
 }

@@ -4,23 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versões do Android</title>
-    <script>
-        function loadStylesheet() {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.type = "text/css";
-
-            if (window.innerWidth <= 600) {
-                link.href = "style_mobile.css";
-            } 
-            else {
-                link.href = "style_historico.css";
-            }
-
-            document.head.appendChild(link);
-        }
-        loadStylesheet();
-    </script>
+    <link rel="stylesheet" href="style_historico.css">
 </head>
 <body>
     <header>
@@ -32,120 +16,381 @@
         <a href="pag2/historico.html">Histórico</a>
         <a href="#">Contato</a>
     </nav>
-    <nav>
-        <ul class="tabs">
-            <li><a href="#" class="tab-link active" data-tab="tab-1">Cupcake</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-2">Donut</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-3">Eclair</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-4">Froyo</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-5">Gingerbread</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-6">Honeycomb</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-7">Ice Cream Sandwich</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-8">Jelly Bean</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-9">KitKat</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-10">Lollipop</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-11">Marshmallow</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-12">Nougat</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-13">Oreo</a></li>
-            <li><a href="#" class="tab-link" data-tab="tab-14">Pie</a></li>
-        </ul>
-    </nav>
     <main>
-        <div id="tab-1" class="tab-content active">
+        <nav>
+            <a href="#" class="tab-link active" data-tab="tab-1">Cupcake</a>
+            <a href="#" class="tab-link" data-tab="tab-2">Donut</a>
+            <a href="#" class="tab-link" data-tab="tab-3">Eclair</a>
+            <a href="#" class="tab-link" data-tab="tab-4">Froyo</a>
+            <a href="#" class="tab-link" data-tab="tab-5">Gingerbread</a>
+            <a href="#" class="tab-link" data-tab="tab-6">Honeycomb</a>
+            <a href="#" class="tab-link" data-tab="tab-7">Ice Cream Sandwich</a>
+            <a href="#" class="tab-link" data-tab="tab-8">Jelly Bean</a>
+            <a href="#" class="tab-link" data-tab="tab-9">KitKat</a>
+            <a href="#" class="tab-link" data-tab="tab-10">Lollipop</a>
+            <a href="#" class="tab-link" data-tab="tab-11">Marshmallow</a>
+            <a href="#" class="tab-link" data-tab="tab-12">Nougat</a>
+            <a href="#" class="tab-link" data-tab="tab-13">Oreo</a>
+            <a href="#" class="tab-link" data-tab="tab-14">Pie</a>
+        </nav>
+        <div id="tab-1" class="tab-content esquerda active">
+            <h1>Android Cupcake</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 1.5 - Cupcake</h1>
-                <p>Conteúdo sobre o Android 1.5 - Cupcake.</p>
-            </article>
-        </div>
-        <div id="tab-2" class="tab-content">
-            <article>
-                <h1>Android 1.6 - Donut</h1>
-                <p>Conteúdo sobre o Android 1.6 - Donut.</p>
-            </article>
-        </div>
-        <div id="tab-3" class="tab-content">
-            <img class="doce" src="../imagens/ecalir.png" alt="Eclair">
-            <img class="android" src="../imagens/AndroidEclair.jpeg" alt="Android Eclair">
-            <article>
-                <h1>Android 2.1 - Eclair</h1>
-                <p>Android Eclair, de 2010, foi lançado com o Nexus One, o primeiro telefone Nexus. O Google encerrou o suporte de mercado para Android 2.1 e versões anteriores em 30 de junho de 2017.</p>
-                <h2>Novos recursos e alterações</h2>
+                <p>Android Cupcake foi lançado em 27 de abril de 2009 e foi a primeira versão do Android a ter um nome de sobremesa, seguindo a tradição que continuaria nas versões futuras. A versão 1.5 do Android trouxe várias melhorias e novas funcionalidades em relação à versão 1.1. O HTC Dream (também conhecido como T-Mobile G1) foi um dos primeiros dispositivos a executar o Cupcake.</p>
+                <h2>Novidades e Mudanças</h2>
                 <ul>
-                    <li>Correções de bugs</li>
-                    <li>Papéis de parede animados</li>
-                    <li>Gaveta de aplicativos em tela cheia</li>
-                    <li>Renovação de aplicativos de relógio, galeria e música</li>
-                    <li>Adição de notícias, previsão do tempo e Google Voice</li>
-                    <li>Adição de fala para texto no teclado.</li>
-                    <li>Adição de pinçar para aplicar zoom</li>
-                    <li>Pequenas alterações na API</li>
+                    <li>Introdução de widgets na tela inicial.</li>
+                    <li>Apoio para teclados virtuais, incluindo o recurso de digitação por toque.</li>
+                    <li>Suporte para vídeos em formato MP4.</li>
+                    <li>Novas animações e transições na interface do usuário.</li>
+                    <li>Possibilidade de fazer upload de vídeos diretamente para o YouTube.</li>
+                    <li>Melhorias na interface do usuário do navegador.</li>
+                    <li>Adição de suporte a múltiplos tamanhos de tela.</li>
+                    <li>Novos aplicativos como Alarm Clock e Cupcake Browser.</li>
                 </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Cupcake foi aprimorada com a introdução de widgets interativos na tela inicial, permitindo acesso rápido a informações e aplicativos. A navegação foi simplificada e melhorada, e o teclado virtual facilitou a digitação. Além disso, a capacidade de fazer upload de vídeos diretamente para o YouTube era um recurso inovador para a época.</p>
+                
+                <h2>Plataforma</h2>
+                <p>O Cupcake trouxe várias melhorias em relação ao seu antecessor, incluindo suporte para Bluetooth e a possibilidade de gravar vídeos. A versão também introduziu novas APIs para desenvolvedores, permitindo a criação de aplicativos mais ricos e interativos. O suporte a HTML para o navegador melhorou significativamente a experiência de navegação na web.</p>
             </article>
         </div>
-        <div id="tab-4" class="tab-content">
+        <div id="tab-2" class="tab-content direita">
+            <h1>Android Donut</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 2.2 - Froyo</h1>
-                <p>Conteúdo sobre o Android 2.2 - Froyo.</p>
+                <p>Android Donut foi lançado em 15 de setembro de 2009 e foi a primeira versão do Android a ter um nome de sobremesa, dando início à tradição das versões nomeadas. A versão 1.6 trouxe diversas melhorias em relação à versão 1.5 (Cupcake), incluindo suporte a telas de diferentes tamanhos e resoluções. O HTC Dream (T-Mobile G1) foi um dos dispositivos que receberam a atualização para Donut.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Suporte para diferentes tamanhos de tela e resoluções.</li>
+                    <li>Nova interface de busca, permitindo pesquisas mais eficientes.</li>
+                    <li>Melhorias no Android Market com a introdução de uma interface mais amigável.</li>
+                    <li>Adição de suporte a múltiplos idiomas.</li>
+                    <li>Capacidade de gravar vídeos e melhorar a qualidade das imagens.</li>
+                    <li>Novos recursos de acessibilidade.</li>
+                    <li>Suporte para gestos de toque.</li>
+                    <li>Novos aplicativos como Voice Search e Quick Search Box.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Donut foi aprimorada com uma interface mais fluida e recursos de pesquisa mais eficientes. A nova tela de pesquisa permitiu que os usuários encontrassem aplicativos e conteúdos de forma mais rápida. O suporte para diferentes tamanhos de tela melhorou a usabilidade em dispositivos variados, tornando o Android mais acessível a uma gama maior de usuários.</p>
+                
+                <h2>Plataforma</h2>
+                <p>O Donut trouxe várias melhorias em relação ao Cupcake, incluindo otimizações na velocidade do sistema e novas APIs para desenvolvedores. O suporte a Bluetooth foi introduzido, e melhorias na navegação e na qualidade da câmera foram significativas. O sistema também permitiu uma melhor integração com serviços de mídia e redes sociais, expandindo as possibilidades para aplicativos.</p>
             </article>
         </div>
-        <div id="tab-5" class="tab-content">
+        <div id="tab-3" class="tab-content esquerda">
+            <h1>Android Eclair</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 2.3 - Gingerbread</h1>
-                <p>Conteúdo sobre o Android 2.3 - Gingerbread.</p>
+                <p>Android Eclair foi lançado em 26 de outubro de 2009 e trouxe várias mudanças em relação ao Android 1.6 "Donut". O primeiro telefone a usar o Eclair foi o Motorola Droid. O suporte ao Android Market para o Eclair foi encerrado em 30 de junho de 2017. A versão 2.1 do Eclair saiu em janeiro de 2010, depois do 2.0 e antes do 2.2 (Froyo). Ela foi lançada com o Nexus One, o primeiro telefone Nexus. O Google também parou de dar suporte para o Eclair e versões anteriores em 30 de junho de 2017, e não se sabe se o suporte para login foi encerrado.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Várias pequenas mudanças na API.</li>
+                    <li>Correções de bugs.</li>
+                    <li>Tela de bloqueio com aba deslizante.</li>
+                    <li>Papéis de parede ao vivo que animam o fundo da tela inicial.</li>
+                    <li>Gaveta de aplicativos em tela cheia.</li>
+                    <li>Novos designs para os aplicativos de relógio, galeria e música.</li>
+                    <li>Novos apps como News and Weather e Google Voice.</li>
+                    <li>Suporte a texto por voz no teclado.</li>
+                    <li>Mais apps disponíveis no Android Market.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A tela inicial do Eclair tem uma barra de pesquisa do Google na parte superior. O aplicativo de câmera foi redesenhado, com novos recursos como flash, zoom digital e modos de cena. A galeria de fotos ganhou ferramentas básicas de edição. Os papéis de parede ao vivo foram uma nova adição, permitindo animações no fundo. O recurso de texto por voz também foi introduzido.</p>
+                
+                <h2>Plataforma</h2>
+                <p>O Eclair trouxe melhorias da versão Donut, como a pesquisa em SMS e MMS, melhorias no Google Maps e suporte ao Exchange no app de email. O sistema também melhorou a digitação no teclado virtual e trouxe novas APIs de acessibilidade, calendário e VPN. Na navegação, adicionou suporte ao HTML5 e uma nova interface para o navegador.</p>
             </article>
         </div>
-        <div id="tab-6" class="tab-content">
+        
+        <div id="tab-4" class="tab-content direita">
+            <h1>Android Froyo</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 3.0 - Honeycomb</h1>
-                <p>Conteúdo sobre o Android 3.0 - Honeycomb.</p>
+                <p>Android Froyo foi lançado em 20 de maio de 2010 e representou uma evolução significativa em relação ao Android 2.1 (Eclair). A versão 2.2 trouxe melhorias de desempenho, novos recursos e aprimoramentos na interface. O Google Nexus One foi um dos primeiros dispositivos a receber essa atualização.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Aprimoramento da velocidade e desempenho do sistema.</li>
+                    <li>Introdução do suporte para Adobe Flash.</li>
+                    <li>Melhorias na pesquisa por voz e no Google Voice Actions.</li>
+                    <li>Capacidade de instalar aplicativos em cartões SD.</li>
+                    <li>Novos recursos de segurança, incluindo autenticação por senha remota.</li>
+                    <li>Suporte para várias contas do Gmail.</li>
+                    <li>Interface de usuário aprimorada para a tela inicial e gaveta de aplicativos.</li>
+                    <li>Adição do serviço de backup automático.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Froyo foi enriquecida com um desempenho mais rápido e suave. A introdução do suporte a Flash permitiu que os usuários acessassem conteúdo multimídia em seus navegadores, enquanto os novos recursos de pesquisa por voz melhoraram a interatividade. A capacidade de mover aplicativos para o cartão SD foi um grande avanço, permitindo aos usuários otimizar o armazenamento em seus dispositivos.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Froyo trouxe melhorias notáveis na plataforma, incluindo a introdução de APIs que permitiram um maior acesso ao hardware do dispositivo. As melhorias de segurança garantiram uma proteção melhorada dos dados dos usuários. O suporte a HTML5 também foi adicionado, melhorando a experiência de navegação na web e abrindo novas possibilidades para desenvolvedores de aplicativos.</p>
             </article>
         </div>
-        <div id="tab-7" class="tab-content">
+        <div id="tab-5" class="tab-content esquerda">
+            <h1>Android Gingerbread</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 4.0 - Ice Cream Sandwich</h1>
-                <p>Conteúdo sobre o Android 4.0 - Ice Cream Sandwich.</p>
+                <p>Android Gingerbread foi lançado em 6 de dezembro de 2010 e trouxe uma série de melhorias em relação ao Android 2.2 (Froyo). A versão 2.3 introduziu uma interface mais refinada, melhor desempenho e novos recursos, visando proporcionar uma experiência de usuário mais intuitiva. O Nexus S foi um dos primeiros dispositivos a utilizar esta versão.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Interface de usuário redesenhada, com novos elementos visuais e ícones.</li>
+                    <li>Melhorias na velocidade e na eficiência do sistema.</li>
+                    <li>Suporte nativo para VoIP e chamadas por internet.</li>
+                    <li>Integração aprimorada com redes sociais.</li>
+                    <li>Novos recursos de gerenciamento de energia.</li>
+                    <li>Suporte a teclados de terceiros e layout de teclado otimizado.</li>
+                    <li>Melhoria nas funcionalidades de copiar, colar e selecionar texto.</li>
+                    <li>Novos recursos para jogos, incluindo suporte para sensores de jogo.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Gingerbread foi aprimorada com uma interface mais elegante e responsiva. A capacidade de fazer chamadas por internet e a integração com redes sociais tornaram a comunicação mais fácil e fluida. Os novos recursos de gerenciamento de energia também ajudaram a prolongar a vida útil da bateria, um aspecto muito valorizado pelos usuários.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Gingerbread trouxe melhorias significativas na plataforma, incluindo novas APIs que permitiram um desenvolvimento mais rico e eficiente de aplicativos. O suporte para VoIP ofereceu novas possibilidades para aplicativos de comunicação. Além disso, a otimização do desempenho do sistema fez com que dispositivos mais antigos também pudessem aproveitar as melhorias, garantindo uma maior longevidade para muitos aparelhos Android.</p>
             </article>
         </div>
-        <div id="tab-8" class="tab-content">
+        <div id="tab-6" class="tab-content direita">
+            <h1>Android Honeycomb</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 4.1 - Jelly Bean</h1>
-                <p>Conteúdo sobre o Android 4.1 - Jelly Bean.</p>
+                <p>Android Honeycomb foi lançado em 22 de fevereiro de 2011 e foi projetado especificamente para dispositivos com tela grande, como tablets. A versão 3.0 trouxe uma interface de usuário totalmente nova, otimizada para aproveitar as telas maiores, oferecendo uma experiência mais rica e intuitiva. O Motorola XOOM foi um dos primeiros dispositivos a executar esta versão.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Interface de usuário completamente redesenhada, focada em tablets.</li>
+                    <li>Nova barra de ações na parte superior da tela.</li>
+                    <li>Suporte para multitarefa com uma nova visão de aplicativos recentes.</li>
+                    <li>Widgets redimensionáveis e interativos.</li>
+                    <li>Integração do Google Talk com vídeo chamadas.</li>
+                    <li>Melhorias no navegador, incluindo suporte a abas e navegação em HTML5.</li>
+                    <li>Nova API para desenvolvedores focada em tablets.</li>
+                    <li>Melhorias na configuração do teclado e suporte a entrada de texto.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Honeycomb foi revolucionária, especialmente para tablets, oferecendo uma interface limpa e moderna. Os novos widgets redimensionáveis permitiram personalização avançada da tela inicial, enquanto a barra de ações facilitou o acesso a funcionalidades. O suporte à multitarefa proporcionou uma navegação mais fluida entre aplicativos, melhorando a produtividade dos usuários.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Honeycomb trouxe um foco maior em tablets, introduzindo APIs que permitiram que desenvolvedores criassem aplicativos otimizados para telas grandes. As melhorias no desempenho e na interface do navegador garantiram uma experiência de navegação superior. Além disso, a integração com o Google Talk para videochamadas ofereceu uma nova dimensão para a comunicação móvel, destacando o potencial dos tablets como ferramentas de comunicação.</p>
             </article>
         </div>
-        <div id="tab-9" class="tab-content">
+        <div id="tab-7" class="tab-content esquerda">
+            <h1>Android Ice Cream Sandwich</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 4.4 - KitKat</h1>
-                <p>Conteúdo sobre o Android 4.4 - KitKat.</p>
+                <p>Android Ice Cream Sandwich foi lançado em 18 de outubro de 2011 e foi uma versão importante, pois unificou as experiências de smartphone e tablet em uma única plataforma. A versão 4.0 trouxe um design mais moderno, com uma interface de usuário aprimorada e novos recursos, sendo o Samsung Galaxy Nexus um dos primeiros dispositivos a utilizá-la.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Design de interface "Holo" mais limpo e moderno.</li>
+                    <li>Integração de recursos de tablet e smartphone em um único sistema.</li>
+                    <li>Novo recurso de desbloqueio facial.</li>
+                    <li>Melhorias nas notificações, incluindo respostas rápidas.</li>
+                    <li>Interface de câmera melhorada com opções de edição.</li>
+                    <li>Suporte a widgets redimensionáveis e múltiplas telas iniciais.</li>
+                    <li>Nova galeria de fotos com visualizações em miniatura.</li>
+                    <li>Melhorias nas funcionalidades de busca e assistente de voz.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Ice Cream Sandwich foi marcante, com uma interface visualmente atraente e intuitiva. O desbloqueio facial trouxe uma nova maneira de acessar o dispositivo, enquanto as melhorias nas notificações permitiram uma gestão mais fácil de mensagens e alertas. A integração de funcionalidades de tablet tornou a navegação mais fluida em diferentes dispositivos.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Ice Cream Sandwich trouxe novas APIs que permitiram a criação de aplicativos mais sofisticados e responsivos. O foco na unificação das plataformas facilitou o desenvolvimento e a manutenção de aplicativos em diferentes dispositivos. A otimização do desempenho e a adição de suporte a recursos avançados, como edição de imagens, destacaram ainda mais as capacidades do Android como uma plataforma robusta para desenvolvedores e usuários.</p>
             </article>
         </div>
-        <div id="tab-10" class="tab-content">
+        <div id="tab-8" class="tab-content direita">
+            <h1>Android Jelly Bean</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 5.0 - Lollipop</h1>
-                <p>Conteúdo sobre o Android 5.0 - Lollipop.</p>
+                <p>Android Jelly Bean foi lançado em 9 de julho de 2012 e trouxe várias melhorias em relação ao Android 4.0 (Ice Cream Sandwich). A versão 4.1 focou na performance e na experiência do usuário, introduzindo novos recursos e refinamentos. O Nexus 7 foi um dos dispositivos que estreou essa versão.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Melhoria no desempenho com o Project Butter, garantindo uma interface mais suave.</li>
+                    <li>Notificações expandidas com ações rápidas.</li>
+                    <li>Busca por voz mais inteligente e melhorias no Google Now.</li>
+                    <li>Widgets mais interativos e responsivos.</li>
+                    <li>Integração de funções de acessibilidade aprimoradas.</li>
+                    <li>Melhorias no teclado com suporte a entrada por gestos.</li>
+                    <li>Suporte para múltiplos usuários em tablets.</li>
+                    <li>Novas APIs para desenvolvedores, permitindo recursos mais avançados.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Jelly Bean foi marcada por uma interface fluida e responsiva, resultante do Project Butter, que melhorou drasticamente a performance. As notificações expandidas permitiram que os usuários interagissem rapidamente sem precisar abrir os aplicativos. A busca por voz mais inteligente e o Google Now proporcionaram informações contextuais úteis, tornando o uso do dispositivo mais intuitivo.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Jelly Bean trouxe novas APIs e ferramentas para desenvolvedores, permitindo a criação de aplicativos mais ricos e interativos. As melhorias de desempenho garantiram que dispositivos mais antigos pudessem aproveitar a nova versão. Além disso, o suporte para múltiplos usuários em tablets ampliou as possibilidades de uso familiar, permitindo que cada membro tivesse seu próprio espaço e configurações.</p>
             </article>
         </div>
-        <div id="tab-11" class="tab-content">
+        <div id="tab-9" class="tab-content esquerda">
+            <h1>Android KitKat</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 6.0 - Marshmallow</h1>
-                <p>Conteúdo sobre o Android 6.0 - Marshmallow.</p>
+                <p>Android KitKat foi lançado em 31 de outubro de 2013 e trouxe uma série de melhorias de desempenho e novas funcionalidades em relação ao Android 4.1 (Jelly Bean). A versão 4.4 foi projetada para otimizar a experiência em dispositivos com hardware limitado, tornando-o mais acessível a uma gama maior de dispositivos. O Google Nexus 5 foi um dos primeiros a utilizar esta versão.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Interface de usuário refinada com um design mais limpo e simples.</li>
+                    <li>Modo de tela cheia para aplicativos.</li>
+                    <li>Melhorias na eficiência da bateria e desempenho geral.</li>
+                    <li>Suporte para impressão em nuvem.</li>
+                    <li>Integração do Google Now na tela inicial.</li>
+                    <li>Novos recursos de chamadas telefônicas e mensagens.</li>
+                    <li>Suporte para a tecnologia NFC e Android Beam.</li>
+                    <li>Melhorias no Google Hangouts como aplicativo de mensagens padrão.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no KitKat foi marcada por uma interface mais elegante e um desempenho aprimorado. O modo de tela cheia permitiu que os aplicativos ocupassem toda a tela, proporcionando uma experiência mais imersiva. A integração do Google Now na tela inicial trouxe informações úteis de forma rápida e fácil, enquanto as melhorias na duração da bateria garantiram que os usuários passassem mais tempo longe da tomada.</p>
+                
+                <h2>Plataforma</h2>
+                <p>KitKat trouxe novas APIs e funcionalidades para desenvolvedores, permitindo a criação de aplicativos mais eficientes e interativos. A otimização para hardware limitado expandiu a compatibilidade do Android, tornando-o disponível em uma variedade maior de dispositivos. O suporte para impressão em nuvem e melhorias na integração de mensagens e chamadas tornaram o sistema mais versátil e funcional para os usuários.</p>
             </article>
         </div>
-        <div id="tab-12" class="tab-content">
+        <div id="tab-10" class="tab-content direita">
+            <h1>Android Lollipop</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 7.0 - Nougat</h1>
-                <p>Conteúdo sobre o Android 7.0 - Nougat.</p>
+                <p>Android Lollipop foi lançado em 12 de novembro de 2014 e trouxe uma das atualizações mais significativas desde o Android 4.0 (Ice Cream Sandwich). A versão 5.0 apresentou um design totalmente renovado com o conceito de Material Design, melhorando a estética e a usabilidade do sistema. O Nexus 6 e o Nexus 9 foram alguns dos primeiros dispositivos a utilizá-la.</p>
+            
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Material Design: novo estilo visual com animações e transições fluidas.</li>
+                    <li>Notificações interativas na tela de bloqueio.</li>
+                    <li>Suporte para múltiplos usuários e perfis de convidados.</li>
+                    <li>Melhorias na eficiência da bateria com o modo "Projeto Volta".</li>
+                    <li>Interface de usuário otimizada para dispositivos com telas grandes.</li>
+                    <li>Atualizações em tempo real para aplicativos em segundo plano.</li>
+                    <li>Nova API de gráficos para desenvolvedores, facilitando animações e efeitos visuais.</li>
+                    <li>Melhor integração do Google Now e do Assistente do Google.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Lollipop foi transformadora, com uma interface mais bonita e intuitiva. As notificações interativas permitiram que os usuários respondessem rapidamente a mensagens sem desbloquear o dispositivo. O Material Design proporcionou uma aparência coesa em todos os aplicativos, enquanto o modo de economia de bateria melhorou a durabilidade, permitindo que os usuários aproveitassem seus dispositivos por mais tempo.</p>
+                
+                <h2>Plataforma</h2>
+                <p>O Lollipop trouxe novas APIs que permitiram a criação de aplicativos mais ricos e responsivos. O foco em Material Design não apenas transformou a estética, mas também incentivou os desenvolvedores a criar experiências de usuário mais envolventes. As melhorias no gerenciamento de recursos e na eficiência da bateria garantiram que os dispositivos funcionassem de maneira mais fluida e duradoura.</p>
             </article>
         </div>
-        <div id="tab-13" class="tab-content">
+        <div id="tab-11" class="tab-content esquerda">
+            <h1>Android Marshmallow</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 8.0 - Oreo</h1>
-                <p>Conteúdo sobre o Android 8.0 - Oreo.</p>
+                <p>Android Marshmallow foi lançado em 5 de outubro de 2015 e trouxe melhorias significativas em relação ao Android 5.0 (Lollipop). A versão 6.0 introduziu o gerenciamento de permissões de aplicativos, permitindo que os usuários controlassem quais dados e recursos os aplicativos poderiam acessar. O Nexus 5X e o Nexus 6P foram os primeiros dispositivos a utilizar esta versão.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Gerenciamento de permissões de aplicativos aprimorado.</li>
+                    <li>Funcionalidade "Doze" para otimização da bateria.</li>
+                    <li>Suporte a impressão nativa e USB Type-C.</li>
+                    <li>Novas APIs para desenvolvedores, incluindo suporte para reconhecimento de impressões digitais.</li>
+                    <li>Melhorias na interface do Google Now.</li>
+                    <li>Suporte para aplicativos em tempo real e gerenciamento de armazenamento.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Marshmallow foi aprimorada com a introdução do gerenciamento de permissões, que deu mais controle aos usuários sobre seus dados. O modo "Doze" também ajudou a prolongar a duração da bateria, adaptando o comportamento do dispositivo quando estava inativo.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Marshmallow trouxe novas APIs que facilitaram a criação de aplicativos mais interativos e seguros. O suporte para impressão nativa e o gerenciamento de armazenamento melhoraram a funcionalidade geral, proporcionando uma experiência mais fluida para os desenvolvedores e usuários.</p>
             </article>
         </div>
-        <div id="tab-14" class="tab-content">
+        
+        <div id="tab-12" class="tab-content direita">
+            <h1>Android Nougat</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
             <article>
-                <h1>Android 9.0 - Pie</h1>
-                <p>Conteúdo sobre o Android 9.0 - Pie.</p>
+                <p>Android Nougat foi lançado em 22 de agosto de 2016 e trouxe várias melhorias de desempenho e novas funcionalidades em relação ao Android 6.0 (Marshmallow). A versão 7.0 focou em aprimorar a multitarefa e a experiência geral do usuário. O Nexus 5X e o Nexus 6P foram os primeiros a receber esta atualização.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Suporte para múltiplas janelas e divisão de tela.</li>
+                    <li>Notificações agrupadas e respostas rápidas.</li>
+                    <li>Melhorias na eficiência da bateria e gerenciamento de recursos.</li>
+                    <li>Atualizações em segundo plano para aplicativos.</li>
+                    <li>Melhorias no modo de jogo e suporte para VR.</li>
+                    <li>Nova API de emojicons e suporte para gráficos Vulkan.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Nougat foi enriquecida com a introdução de múltiplas janelas, permitindo que os usuários trabalhassem em dois aplicativos ao mesmo tempo. As notificações agrupadas facilitaram a visualização e a resposta a mensagens rapidamente, melhorando a produtividade.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Nougat trouxe novas APIs que permitiram o desenvolvimento de aplicativos mais eficientes, especialmente com o suporte para gráficos Vulkan. As melhorias de desempenho garantiram que os dispositivos funcionassem de maneira mais fluida, proporcionando uma experiência geral melhorada.</p>
+            </article>
+        </div>
+        
+        <div id="tab-13" class="tab-content esquerda">
+            <h1>Android Oreo</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
+            <article>
+                <p>Android Oreo foi lançado em 21 de agosto de 2017 e trouxe melhorias significativas em desempenho e segurança em relação ao Android 7.0 (Nougat). A versão 8.0 introduziu novos recursos como o Picture-in-Picture e melhorias no gerenciamento de notificações. O Google Pixel e o Pixel 2 foram alguns dos primeiros dispositivos a utilizar esta versão.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Modo Picture-in-Picture para multitarefa.</li>
+                    <li>Notificações com canais personalizados.</li>
+                    <li>Otimizações de inicialização e desempenho do sistema.</li>
+                    <li>Suporte a Autofill para senhas e formulários.</li>
+                    <li>Melhorias na segurança e suporte a mais tipos de criptografia.</li>
+                    <li>Novas APIs para desenvolvedores, incluindo suporte para pontuação de aplicativos.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Oreo foi aprimorada com o modo Picture-in-Picture, que permitiu assistir a vídeos enquanto usava outros aplicativos. As notificações personalizadas facilitaram o gerenciamento de alertas, melhorando a interatividade e a produtividade.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Oreo trouxe novas APIs que ajudaram os desenvolvedores a criar aplicativos mais responsivos e seguros. As melhorias no desempenho e na segurança garantiram que os dispositivos operassem de maneira mais eficiente, proporcionando uma experiência de usuário mais fluida.</p>
+            </article>
+        </div>
+        
+        <div id="tab-14" class="tab-content direita">
+            <h1>Android Pie</h1>
+            <img class="android" src="../imagens/eclair/AndroidEclair.jpeg" alt="Android Eclair">
+            <img class="doce" src="../imagens/eclair/ecalir.png" alt="Eclair">
+            <article>
+                <p>Android Pie foi lançado em 6 de agosto de 2018 e trouxe um foco maior em inteligência artificial e usabilidade. A versão 9.0 introduziu o Adaptive Battery e melhorias na interface do usuário. O Google Pixel foi um dos primeiros dispositivos a receber esta versão.</p>
+                
+                <h2>Novidades e Mudanças</h2>
+                <ul>
+                    <li>Adaptive Battery que usa aprendizado de máquina para otimizar o uso da bateria.</li>
+                    <li>Navegação por gestos e interface de usuário otimizada.</li>
+                    <li>Melhorias nas notificações e suporte a respostas inteligentes.</li>
+                    <li>Modo Noturno para economizar energia e melhorar a visibilidade.</li>
+                    <li>Novas funcionalidades de privacidade e segurança.</li>
+                    <li>API para desenvolvedores que permite criar experiências mais personalizadas.</li>
+                </ul>
+                <br>
+                <h2>Experiência do Usuário</h2>
+                <p>A experiência do usuário no Pie foi enriquecida com o Adaptive Battery, que aprendeu quais aplicativos os usuários mais utilizavam, ajudando a prolongar a vida útil da bateria. A navegação por gestos simplificou o uso, tornando a interação mais intuitiva.</p>
+                
+                <h2>Plataforma</h2>
+                <p>Pie trouxe novas APIs e ferramentas que permitiram aos desenvolvedores criar aplicativos mais inteligentes e responsivos. O foco em inteligência artificial e aprendizado de máquina melhorou a eficiência do sistema, tornando os dispositivos mais adaptáveis às necessidades dos usuários.</p>
             </article>
         </div>
     </main>
